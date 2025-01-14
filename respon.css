@@ -6,6 +6,17 @@
     .box {
         transform: scale(95%);
     }
+
+    ul>li {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        column-gap: 30px;
+        height: 100%;
+        width: 60%;
+        top: 0;
+        right: 0;
+    }
 }
 
 @media(max-width: 480px) {
