@@ -61,6 +61,7 @@
 
 html {
     scroll-behavior: smooth;
+    transition: 0.2s linear;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
 .category-1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 1.6rem;
     width: 920px;
 }
 
