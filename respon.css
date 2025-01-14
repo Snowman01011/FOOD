@@ -1,10 +1,12 @@
 @media(max-width: 760px) {
     .category-1 {
         grid-template-columns: repeat(3, 1fr);
+        width: 640px;
+        transform: scale(90%);
     }
 
-    .box {
-        transform: scale(95%);
+    .nav-bar {
+        display: none;
     }
 
     ul>li {
@@ -17,10 +19,15 @@
         top: 0;
         right: 0;
     }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 480px) {
     .category-1{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, -2fr);
     }
 }

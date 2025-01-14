@@ -92,6 +92,12 @@ body {
   transform: translateY(100px);
 }
 
+#menu {
+  display: flex;
+  justify-content: center;
+  width: var(--web-width);
+}
+
 .home > img {
   width: 450px;
   height: auto;
@@ -102,7 +108,7 @@ body {
   margin-top: 30px;
 }
 .btn {
-  margin-right: 1cqmin;
+  margin-right: 1.2rem;
   background-color: var(--white-color);
   border: none;
   padding: 10px 20px;
@@ -194,12 +200,46 @@ li>a:hover {
 }
 
 /* below */
+.cat-title, .cat {
+  width: var(--web-width);
+  display: flex;
+  justify-content: center;
+}
+
+.cat {
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.btn-menu {
+  background-color: var(--black-color);
+  border: 2px solid var(--first-color-alt);
+  color: var(--first-color-alt);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.btn-menu:hover {
+  background-color: var(--first-color-alt);
+  color: white;
+}
+
+.title {
+  font-size: var(--biggest-font-size);
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  margin-top: 100px;
+}
+
+
 .category-1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.6rem;
-    width: var(--web-width);
-    transform: translateY(100px);
+    width: var(--web-width);;
 }
 
 /* card design */
@@ -210,7 +250,7 @@ li>a:hover {
     background: var(--gradient-card);
     border-radius: 20px;
     border: 1px solid var(--first-color-alt);
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .card-img {
