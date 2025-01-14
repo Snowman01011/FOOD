@@ -45,7 +45,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 4.25rem;
+    --biggest-font-size: 3.25rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -76,13 +76,59 @@ body {
 /* above */
 .home {
   width: var(--web-width);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-h, .txt-p {
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-size: var(--biggest-font-size);
+}
+
+#home {
+  transform: translateY(100px);
 }
 
 .home > img {
   width: 450px;
+  height: auto;
+  filter: drop-shadow(0px 4px 10px var(--first-color-alt));
 }
+
+.s-c {
+  margin-top: 30px;
+}
+.btn {
+  margin-right: 1cqmin;
+  background-color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--first-color-alt);
+  color: var(--white-color);
+}
+
+.hom-det {
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.hom-det:hover {
+  color: var(--first-color-alt);
+}
+
 /* above */
 
 /* below */
@@ -108,6 +154,7 @@ ul {
   height: 60px;
   display: flex;
   align-items: center;
+  z-index: -1;
 }
 
 ul>li {
@@ -125,7 +172,7 @@ ul>li>a {
   transition: 0.2s linear;
 }
 
-ul>li>a:hover {
+li>a:hover {
   color: var(--first-color-light);
 }
 
@@ -138,6 +185,7 @@ ul>li>a:hover {
   align-items: center;
   margin: 30px;
   float: right;
+  z-index: 1;
 }
 .logo {
   color: var(--white-color);
